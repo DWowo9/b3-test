@@ -1,0 +1,255 @@
+/* =========================================================
+   GLOBAL COLOR OVERRIDE (GREEN → RED)
+   ========================================================= */
+
+:root {
+  --green: #dd052b;
+  --dark-green: #a00421;
+
+  --l3l-main-green-color: #dd052b;
+  --main-green-color: #dd052b;
+  --main-green-lighten-color: #e63a55;
+
+  --primary-color: #dd052b;
+  --primary-color-hover: #c00425;
+
+  --primary-light: #fbe6ea;
+}
+
+
+/* =========================================================
+   GLOBAL BACKGROUND
+   ========================================================= */
+
+body {
+  background: #dd052b !important;
+}
+
+
+/* =========================================================
+   SIDEBAR / LAYOUT
+   ========================================================= */
+
+.sidebar {
+  background-color: #a00421 !important;
+}
+
+.b3w-hr-position,
+.pending {
+  background-color: #dd052b !important;
+  color: #fff !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.pane-login .btn-login,
+.pane-login.login-new-design .btn-login,
+.confirmUploadedFileButton {
+  background-color: #dd052b !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.pane-login .btn-login:hover,
+.pane-login.login-new-design .btn-login:hover,
+.confirmUploadedFileButton:hover {
+  background-color: #c00425 !important;
+}
+
+
+/* REGISTER BUTTON */
+.pane-login .btn-register {
+  background-color: #a00421 !important;
+}
+
+.pane-login .btn-register:hover {
+  background-color: #c00425 !important;
+}
+
+
+/* =========================================================
+   TEXT COLORS
+   ========================================================= */
+
+.b3whr-title,
+.modal-Popup .title,
+.b3w-hr-header-name,
+.b3w-hr-header-with-paragraph-title {
+  color: #dd052b !important;
+}
+
+
+/* SECONDARY RED TEXT */
+.pane-login .login-actions.register-info {
+  color: #dd052b !important;
+}
+
+
+/* =========================================================
+   ICONS
+   ========================================================= */
+
+.ic-link-selected:after,
+.ic-link-selected:before,
+.ic-menu-link-hover:hover:before {
+  color: #dd052b !important;
+}
+
+
+/* =========================================================
+   FORMS / INPUTS
+   ========================================================= */
+
+input[type="text"]:focus-visible,
+input[type="password"]:focus-visible {
+  border: 1px solid #dd052b !important;
+  background-color: #fbe6ea !important;
+}
+
+.TextFieldWithLabel.validationErrorInField input {
+  border-color: #dd052b !important;
+}
+
+
+/* =========================================================
+   CHECKBOXES
+   ========================================================= */
+
+.bweb3-checkbox .custom-checkbox input:checked + .checkmark {
+  background: #dd052b !important;
+  border-color: #dd052b !important;
+}
+
+
+/* =========================================================
+   DROPDOWN / SELECT
+   ========================================================= */
+
+.bweb3-dropdown-arrow.down {
+  border-top-color: #dd052b !important;
+}
+
+.bweb3-dropdown-arrow.up {
+  border-bottom-color: #dd052b !important;
+}
+
+
+/* =========================================================
+   FILE UPLOAD / DRAG AREA
+   ========================================================= */
+
+.bweb3-files-dropzone.drag-over {
+  background-color: rgba(221,5,43,0.1) !important;
+  border-color: rgba(221,5,43,0.3) !important;
+}
+
+
+/* =========================================================
+   MODALS
+   ========================================================= */
+
+.modal-Popup .close-modal-btn .lite3g-icon {
+  background-color: #dd052b !important;
+}
+
+.deleteProfileConfirmationButton {
+  background-color: #dd052b !important;
+}
+
+
+/* =========================================================
+   CHAT / BUTTONS
+   ========================================================= */
+
+.chatInputBox .chatInputBoxContainerRight {
+  background-color: #a00421 !important;
+}
+
+.appointment .appointment-accept-decline-buttons .appointment-button-accept {
+  background-color: #dd052b !important;
+}
+
+
+/* =========================================================
+   CALENDAR / DATEPICKER
+   ========================================================= */
+
+.react-datepicker__day--selected,
+.react-datepicker__day--highlighted {
+  background-color: #dd052b !important;
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: #c00425 !important;
+}
+
+
+/* =========================================================
+   TOAST / MESSAGE COLORS
+   ========================================================= */
+
+.b3w-hr-info {
+  background-color: #dd052b !important;
+}
+
+.Toastify__close-button,
+.Toastify__toast--success .Toastify__close-button {
+  color: #dd052b !important;
+}
+
+
+/* =========================================================
+   SPINNER / LOADER
+   ========================================================= */
+
+.spinner {
+  border-left-color: #dd052b !important;
+}
+
+
+/* =========================================================
+   SPECIAL HARD OVERRIDES (IMPORTANT)
+   ========================================================= */
+
+/* replaces original green backgrounds explicitly */
+[style*="#0e6250"],
+[style*="#0c5643"],
+[style*="#1a5540"],
+[style*="#51937c"],
+[style*="#5fa78d"] {
+  background-color: #dd052b !important;
+}
+
+
+/* =========================================================
+   HOVER STATES
+   ========================================================= */
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+
+/* =========================================================
+   OPTIONAL: HEADER SEARCH FIELD
+   ========================================================= */
+
+.b3WHrAvailablePositions-search input[type=text] {
+  background-color: #a00421 !important;
+}
+
+
+/* =========================================================
+   OPTIONAL: MESSAGE BUBBLES
+   ========================================================= */
+
+.my-cloud {
+  background-color: #dd052b !important;
+}
+
+.other-cloud {
+  border-color: #dd052b33 !important;
+}
