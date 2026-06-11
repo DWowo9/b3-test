@@ -1,10 +1,10 @@
 /* =========================================================
-   GLOBAL COLOR OVERRIDE (GREEN → RED)
+   GLOBAL COLOR OVERRIDE
    ========================================================= */
 
 :root {
   --green: #dd052b;
-  --dark-green: #a00421;
+  --dark-green: #dd052b;
 
   --l3l-main-green-color: #dd052b;
   --main-green-color: #dd052b;
@@ -16,28 +16,47 @@
   --primary-light: #fbe6ea;
 }
 
-
-/* =========================================================
-   GLOBAL BACKGROUND
-   ========================================================= */
-
-body {
-  background: #dd052b !important;
+html body {
+  --green: #dd052b !important;
+  --dark-green: #dd052b !important;
 }
 
 
 /* =========================================================
-   SIDEBAR / LAYOUT
+   SIDEBAR (WHITE)
    ========================================================= */
 
 .sidebar {
-  background-color: #a00421 !important;
+  background-color: #ffffff !important;
+  border-right: 1px solid #eee !important;
 }
 
-.b3w-hr-position,
-.pending {
-  background-color: #dd052b !important;
-  color: #fff !important;
+/* Sidebar Icons */
+.sidebar .lite3g-icon,
+.sidebar .LG-Icon,
+.sidebar i,
+.sidebar svg {
+  color: #dd052b !important;
+  fill: #dd052b !important;
+}
+
+.sidebar .active,
+.sidebar .selected {
+  background-color: #fbe6ea !important;
+}
+
+
+/* =========================================================
+   SIDEBAR LOGO (INLINE FIX)
+   ========================================================= */
+
+.sidebar-logo {
+  background-image: url("https://raw.githubusercontent.com/DWowo9/logo-wowo-career/45347901f5fea3ae478783dec1196f2890604107/wowo-karriere.gif") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #ffffff !important;
+  height: 80px !important;
 }
 
 
@@ -45,89 +64,94 @@ body {
    BUTTONS
    ========================================================= */
 
-.pane-login .btn-login,
-.pane-login.login-new-design .btn-login,
-.confirmUploadedFileButton {
+.button {
   background-color: #dd052b !important;
-  border: none !important;
+  border-color: #dd052b !important;
   color: #fff !important;
 }
 
-.pane-login .btn-login:hover,
-.pane-login.login-new-design .btn-login:hover,
-.confirmUploadedFileButton:hover {
+.button.round {
+  background-color: #dd052b !important;
+}
+
+.icon-btn-selected {
+  background-color: #dd052b !important;
+}
+
+.button:hover {
   background-color: #c00425 !important;
 }
 
-
-/* REGISTER BUTTON */
-.pane-login .btn-register {
-  background-color: #a00421 !important;
+/* Inline overwrite */
+button[style*="dark-green"],
+button[style*="#0e6250"],
+button[style*="#0c5643"],
+button[style*="#1a5540"],
+button[style*="#51937c"],
+button[style*="#5fa78d"] {
+  background-color: #dd052b !important;
 }
 
-.pane-login .btn-register:hover {
+
+/* =========================================================
+   LITE3G ICON BUTTONS
+   ========================================================= */
+
+.lite3g-icon {
+  background-color: #dd052b !important;
+  border-radius: 6px !important;
+}
+
+.lite3g-icon .LG-Icon,
+.lite3g-icon i {
+  color: #fff !important;
+}
+
+.lite3g-icon:hover {
   background-color: #c00425 !important;
 }
 
-
-/* =========================================================
-   TEXT COLORS
-   ========================================================= */
-
-.b3whr-title,
-.modal-Popup .title,
-.b3w-hr-header-name,
-.b3w-hr-header-with-paragraph-title {
-  color: #dd052b !important;
-}
-
-
-/* SECONDARY RED TEXT */
-.pane-login .login-actions.register-info {
-  color: #dd052b !important;
-}
-
-
-/* =========================================================
-   ICONS
-   ========================================================= */
-
-.ic-link-selected:after,
-.ic-link-selected:before,
-.ic-menu-link-hover:hover:before {
-  color: #dd052b !important;
-}
-
-
-/* =========================================================
-   FORMS / INPUTS
-   ========================================================= */
-
-input[type="text"]:focus-visible,
-input[type="password"]:focus-visible {
+.lite3g-icon.outline {
+  background: transparent !important;
   border: 1px solid #dd052b !important;
+}
+
+.lite3g-icon.outline .LG-Icon {
+  color: #dd052b !important;
+}
+
+
+/* =========================================================
+   FORM FIELDS
+   ========================================================= */
+
+input,
+select,
+textarea {
+  border-color: #dd052b !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #dd052b !important;
+  box-shadow: 0 0 0 1px #dd052b33 !important;
   background-color: #fbe6ea !important;
 }
 
-.TextFieldWithLabel.validationErrorInField input {
+.TextFieldWithLabel input {
   border-color: #dd052b !important;
 }
 
-
-/* =========================================================
-   CHECKBOXES
-   ========================================================= */
-
-.bweb3-checkbox .custom-checkbox input:checked + .checkmark {
-  background: #dd052b !important;
-  border-color: #dd052b !important;
+select {
+  border: 1px solid #dd052b !important;
 }
 
+input::placeholder {
+  color: #dd052b99 !important;
+}
 
-/* =========================================================
-   DROPDOWN / SELECT
-   ========================================================= */
-
+/* Dropdown arrows */
 .bweb3-dropdown-arrow.down {
   border-top-color: #dd052b !important;
 }
@@ -138,43 +162,19 @@ input[type="password"]:focus-visible {
 
 
 /* =========================================================
-   FILE UPLOAD / DRAG AREA
+   POSITION NAME
    ========================================================= */
 
-.bweb3-files-dropzone.drag-over {
-  background-color: rgba(221,5,43,0.1) !important;
-  border-color: rgba(221,5,43,0.3) !important;
+.position-name {
+  color: #dd052b !important;
+  font-size: 1.3em !important;
+  font-weight: 700 !important;
+  text-align: left !important;
 }
 
 
 /* =========================================================
-   MODALS
-   ========================================================= */
-
-.modal-Popup .close-modal-btn .lite3g-icon {
-  background-color: #dd052b !important;
-}
-
-.deleteProfileConfirmationButton {
-  background-color: #dd052b !important;
-}
-
-
-/* =========================================================
-   CHAT / BUTTONS
-   ========================================================= */
-
-.chatInputBox .chatInputBoxContainerRight {
-  background-color: #a00421 !important;
-}
-
-.appointment .appointment-accept-decline-buttons .appointment-button-accept {
-  background-color: #dd052b !important;
-}
-
-
-/* =========================================================
-   CALENDAR / DATEPICKER
+   DATEPICKER
    ========================================================= */
 
 .react-datepicker__day--selected,
@@ -188,68 +188,32 @@ input[type="password"]:focus-visible {
 
 
 /* =========================================================
-   TOAST / MESSAGE COLORS
+   CHAT / UI
+   ========================================================= */
+
+.chatInputBox .chatInputBoxContainerRight {
+  background-color: #ffffff !important;
+}
+
+
+/* =========================================================
+   TEXT COLORS
+   ========================================================= */
+
+.b3whr-title,
+.modal-Popup .title {
+  color: #dd052b !important;
+}
+
+
+/* =========================================================
+   TOAST / INFO
    ========================================================= */
 
 .b3w-hr-info {
   background-color: #dd052b !important;
 }
 
-.Toastify__close-button,
-.Toastify__toast--success .Toastify__close-button {
+.Toastify__close-button {
   color: #dd052b !important;
-}
-
-
-/* =========================================================
-   SPINNER / LOADER
-   ========================================================= */
-
-.spinner {
-  border-left-color: #dd052b !important;
-}
-
-
-/* =========================================================
-   SPECIAL HARD OVERRIDES (IMPORTANT)
-   ========================================================= */
-
-/* replaces original green backgrounds explicitly */
-[style*="#0e6250"],
-[style*="#0c5643"],
-[style*="#1a5540"],
-[style*="#51937c"],
-[style*="#5fa78d"] {
-  background-color: #dd052b !important;
-}
-
-
-/* =========================================================
-   HOVER STATES
-   ========================================================= */
-
-button:hover {
-  filter: brightness(0.95);
-}
-
-
-/* =========================================================
-   OPTIONAL: HEADER SEARCH FIELD
-   ========================================================= */
-
-.b3WHrAvailablePositions-search input[type=text] {
-  background-color: #a00421 !important;
-}
-
-
-/* =========================================================
-   OPTIONAL: MESSAGE BUBBLES
-   ========================================================= */
-
-.my-cloud {
-  background-color: #dd052b !important;
-}
-
-.other-cloud {
-  border-color: #dd052b33 !important;
 }
