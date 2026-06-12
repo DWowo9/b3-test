@@ -65,7 +65,6 @@ html body {
    ========================================================= */
 
 .button {
-  background-color: #dd052b !important;
   border-color: #dd052b !important;
   color: #fff !important;
 }
@@ -120,7 +119,6 @@ button[style*="#5fa78d"] {
   color: #dd052b !important;
 }
 
-
 /* =========================================================
    FORM FIELDS
    ========================================================= */
@@ -160,6 +158,11 @@ input::placeholder {
   border-bottom-color: #dd052b !important;
 }
 
+.B3WHrTextboxRequired {
+background-color: #f3fcf9;
+background-color: var(--lg-inputs-required-bgnd, #f3fcf9);
+border: .5px solid #dd052b;
+}
 
 /* =========================================================
    POSITION NAME
@@ -210,10 +213,18 @@ input::placeholder {
    TOAST / INFO
    ========================================================= */
 
-.b3w-hr-info {
-  background-color: #dd052b !important;
-}
-
 .Toastify__close-button {
   color: #dd052b !important;
+}
+
+/* =========================================================
+   B3 Header
+   ========================================================= */
+
+.b3w-hr-header-HRcontainer .b3w-hr-header-name {
+color: #dd052b;
+	font-family: Roboto-Condensed, Roboto, Helvetica, Arial, sans-serif;
+ 	font-weight: 700;
+margin-right: 10px;
+ text-transform: uppercase;
 }
